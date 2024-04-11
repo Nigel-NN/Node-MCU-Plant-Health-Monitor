@@ -1,0 +1,37 @@
+# Plant Health Monitor
+
+## Step 1: Gather Your Components
+For this project, you will need the following components:
+- **ESP8266 Microcontroller**
+- **Moisture Sensor**
+- **Light Sensor (LDR)**
+- **DHT11 Sensor** (for temperature and humidity)
+- **LED**
+- **Breadboard and jumper wires**
+
+## Step 2: Connect Your Components
+Connect your components as follows:
+1. Connect the VCC and GND pins of the moisture sensor, light sensor, and DHT11 sensor to the 3.3V and GND pins on the ESP8266, respectively.
+2. Connect the data pin of the moisture sensor to the A0 pin on the ESP8266.
+3. Connect the data pin of the light sensor to the D0 pin on the ESP8266.
+4. Connect the data pin of the DHT11 sensor to the D2 pin on the ESP8266.
+5. Connect the anode (longer leg) of the LED to the D1 pin on the ESP8266, and the cathode (shorter leg) to GND.
+
+## Step 3: Install Necessary Libraries
+You will need to install the following libraries in your Arduino IDE:
+- **ESP8266WiFi.h**
+- **ESP8266WebServer.h**
+- **DHT.h**
+
+You can install these libraries through the Library Manager in the Arduino IDE.
+
+## Step 4: Upload the Code
+Next, you need to upload the code to your ESP8266. Make sure to replace "your_SSID" and "your_PASSWORD" with your actual network credentials in the code.
+
+## Step 5: Access the Web Interface
+Once the code is uploaded and the ESP8266 is powered on, you should be able to see a new Wi-Fi network. Connect to this network using your device. Open a web browser and navigate to the IP address of the ESP8266 (printed in the Serial Monitor). You should see a web page with the current sensor readings and sliders to adjust the thresholds.
+
+## Step 6: Monitor Your Plant’s Health
+Now you can start monitoring your plant’s health. The web interface will show you the current moisture level, light intensity, temperature, and humidity. You can adjust the moisture and light thresholds using the sliders on the web page.
+
+And that’s it! You’ve successfully set up your Plant Health Monitor. If you have any questions or run into any issues, feel free to ask for help. Happy gardening! 😊
